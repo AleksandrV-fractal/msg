@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Gonna reload the page</title>
+    <link rel="stylesheet" type="text/css" href="embedder.css">
+    <script>
+        function setMyPage() {
+            let ifra = document.getElementById("msgIfrm");
+            if (ifra.src != '') {
+                ifra.src = "";
+            } else {
+                ifra.src = "http://localhost:3000/";
+            }
+            
+            ifra.classList.toggle("expandedFrame");
+            ifra.classList.toggle("collapsedFrame");
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="msgBox">
+        <iframe id="msgIfrm" class="collapsedFrame"></iframe>
+        <button onclick="setMyPage()">clickme</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+#msgBox{
+    transition-duration: 1s;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    border: 3px black;
+    max-height: 40%;
+    max-width: 50%;
+    background-color: rgba(245, 245, 245, 0.9);
+}
+
+.collapsedFrame{
+    visibility: hidden ;
+    display: flex ;
+    height: 0;
+    width: 0 ;
+    transition-duration: 2s;
+}
+.expandedFrame{
+    visibility: visible;
+    min-width: 40%;
+    display: block;
+    
+}
